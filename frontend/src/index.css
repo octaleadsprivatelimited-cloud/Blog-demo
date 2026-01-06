@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply text-gray-900 bg-white;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+    @apply font-semibold tracking-tight;
+    letter-spacing: -0.02em;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Prose styles for blog content */
+.prose {
+  @apply text-gray-700;
+}
+
+.prose h1 {
+  @apply text-4xl font-bold text-gray-900 mt-10 mb-6;
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+.prose h2 {
+  @apply text-3xl font-bold text-gray-900 mt-10 mb-4;
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+.prose h3 {
+  @apply text-2xl font-semibold text-gray-900 mt-8 mb-3;
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+.prose h4 {
+  @apply text-xl font-semibold text-gray-900 mt-6 mb-2;
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+.prose p {
+  @apply mb-6 leading-relaxed text-lg;
+}
+
+.prose ul, .prose ol {
+  @apply mb-6 pl-6;
+}
+
+.prose ul {
+  @apply list-disc space-y-2;
+}
+
+.prose ol {
+  @apply list-decimal space-y-2;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose a {
+  @apply text-primary-600 hover:text-primary-700 underline font-medium;
+}
+
+.prose img {
+  @apply rounded-xl my-8;
+  box-shadow: 0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary-500 pl-6 pr-4 py-4 italic my-8 bg-primary-50 rounded-r-lg text-gray-800;
+}
+
+.prose code {
+  @apply bg-gray-100 px-2 py-1 rounded-md text-sm font-mono text-gray-800;
+}
+
+.prose pre {
+  @apply bg-gray-900 text-gray-100 p-6 rounded-xl overflow-x-auto my-8;
+  box-shadow: 0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-gray-100;
+}
+
+.prose strong {
+  @apply font-semibold text-gray-900;
+}
+
+.prose hr {
+  @apply my-8 border-gray-200;
+}
+
+.prose table {
+  @apply w-full my-8 border-collapse;
+}
+
+.prose th {
+  @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold text-gray-900;
+}
+
+.prose td {
+  @apply border border-gray-300 px-4 py-2 text-gray-700;
+}
+
