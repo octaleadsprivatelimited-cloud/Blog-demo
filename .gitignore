@@ -38,3 +38,7 @@ Thumbs.db
 *.tmp
 .cache/
 
+# Docker
+.docker/
+docker-compose.override.yml
+
